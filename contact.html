@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="bg-gray-100">
+<!-- Toggle Button (hidden on md and up) -->
+  <button id="sidebarToggle" class="fixed top-2 left-1 z-50 bg-blue-600 text-white p-2 rounded md:hidden">
+    <!-- Hamburger Icon -->
+    <svg id="menu-icon" class="w-6 h-6 block" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <!-- Close Icon -->
+    <svg id="close-icon" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <!-- Sidebar -->
+   <div class="md:flex">
+    
+    <!-- Sidebar -->
+    <aside id="sidebar"
+      class="md:sticky md:top-0 fixed md:static p-10 top-0 left-0 w-64 h-screen bg-green-600 shadow transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+      
+
+  
+
+    <!-- Green Left Sidebar -->
+    
+    <div class="flex flex-col justify-between h-full text-white">
+
+    <!-- Top: Logo and Navigation Links -->
+    <div>
+      <div class="text-2xl font-bold mb-4" id="logo">Durbar Nandi</div>
+
+      <ul class="space-y-2">
+        <li><a href="home.html" class="block hover:bg-green-700 px-3 py-2 rounded">Home</a></li>
+        <li><a href="portfolio.html" class="block hover:bg-green-700 px-3 py-2 rounded">Portfolio</a></li>
+        <li><a href="contact.html" class="block hover:bg-green-700 px-3 py-2 rounded">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Bottom: Social Media Icons -->
+    <div class="flex justify-center space-x-4 text-xl mt-10">
+      <a href="https://www.facebook.com/pronay.nandi.9" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/tomcat1919/" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/durbar-nandi" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:pronaynandi73895@gmail.com" class="hover:text-white"><i class="fas fa-envelope"></i></a>
+    </div>
+    </div>
+    </aside>
+
+    <section class="mainarea">
+    <h1 class="text-4xl font-bold text-700 mb-4">Contact</h1>
+    <p>If you would like to discuss a PCB Layout or design please contact me using the form below.</p>
+    <div class="form">
+        <form class="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow space-y-4">
+  <!-- Name -->
+  <div>
+    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+    <input type="text" id="name" name="name" required
+           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" />
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+    <input type="email" id="email" name="email" required
+           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" />
+  </div>
+
+  <!-- Phone -->
+  <div>
+    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+    <input type="tel" id="phone" name="phone"
+           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" />
+  </div>
+
+  <!-- Message -->
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+    <textarea id="message" name="message" rows="4" required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <div>
+    <button type="submit"
+            class="w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+      Submit
+    </button>
+  </div>
+</form>
+
+    </div>
+    </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('sidebar');
+      const toggleBtn = document.getElementById('sidebarToggle');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('-translate-x-full');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+    const mainContent = document.querySelector('.mainarea');
+    const hamburgerBtn = document.getElementById('sidebarToggle');
+
+    // Function to check if the hamburger icon is visible
+    function adjustMainMargin() {
+      const isHamburgerVisible = window.getComputedStyle(hamburgerBtn).display !== 'none';
+      if (isHamburgerVisible) {
+        mainContent.classList.add('mt-[50px]');
+      } else {
+        mainContent.classList.remove('mt-[20px]');
+      }
+    }
+
+    // Run on page load
+    adjustMainMargin();
+
+    // Also run on window resize
+    window.addEventListener('resize', adjustMainMargin);
+  });
+  </script>
+</body>
+</html>

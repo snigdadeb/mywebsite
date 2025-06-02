@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="bg-gray-100">
+
+  
+  <!-- Toggle Button (hidden on md and up) -->
+  <button id="sidebarToggle" class="fixed top-2 left-1 z-50 bg-blue-600 text-white p-2 rounded md:hidden">
+    <!-- Hamburger Icon -->
+    <svg id="menu-icon" class="w-6 h-6 block" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <!-- Close Icon -->
+    <svg id="close-icon" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <!-- Sidebar -->
+   <div class="md:flex">
+    
+    <!-- Sidebar -->
+    <aside id="sidebar"
+      class="md:sticky md:top-0 fixed md:static p-10 top-0 left-0 w-64 h-screen bg-green-600 shadow transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+      
+
+  
+
+    <!-- Green Left Sidebar -->
+    
+    <div class="flex flex-col justify-between h-full text-white">
+
+    <!-- Top: Logo and Navigation Links -->
+    <div>
+      <div class="text-2xl font-bold mb-4" id="logo">Durbar Nandi</div>
+
+      <ul class="space-y-2">
+        <li><a href="home.html" class="block hover:bg-green-700 px-3 py-2 rounded">Home</a></li>
+        <li><a href="portfolio.html" class="block hover:bg-green-700 px-3 py-2 rounded">Portfolio</a></li>
+        <li><a href="contact.html" class="block hover:bg-green-700 px-3 py-2 rounded">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Bottom: Social Media Icons -->
+    <div class="flex justify-center space-x-4 text-xl mt-10">
+      <a href="https://www.facebook.com/pronay.nandi.9" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/tomcat1919/" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/durbar-nandi" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:pronaynandi73895@gmail.com" class="hover:text-white"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    </div>
+    </aside>
+
+    <section class="mainarea">
+        <h1 class="text-4xl font-bold text-700 mb-4">Portfolio</h1>
+        <p>The examples below are of drawings, 3D models, and Printed Circuit Boards (PCBs) designed by myself whilst employed by the companies responsible for the development of the products. The boards and drawings were retained with the full written permission of the companies concerned.</p>
+        <h1 class="text-4xl font-bold text-700 mb-4">Portable Gas Detector</h1>
+        <p>TPortable Multi-Gas Detector with stringent segregation rules set up within the schematic and transferred over to the PCB design to meet IECEx, ATEX, and UL certification. The product was designed with close collaboration with the Mechanical Design Engineer and with the continual transfer of STEP data for the PCB Assembly from Pulsonix to Solidworks, and for the PCB profile from Solidworks to Pulsonix, throughout the design process.</p>
+        <p>Display PCB incorporating zener barrier protection circuitry with associated segregation and infallible connections to meet intrinsic safety requirements.</p>
+        <img src="multilayerpcbwithlasermicroviasside1.webp" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Six Layer Display PCB with Laser Drilled Micro-vias</figure>
+        <p>The display board incorporates laser-drilled micro-vias.</p>
+        <img src="lasermicroviasside1.jpg" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Close-up of the Micro-vias</figure>
+        <p>The main PCB has a potted enclosure on one side of the PCB to enable smaller creepage requirements between nets associated with the Lithium-Ion battery monitoring and charging circuitry, and the regulated power supply circuitry. This enables the PCB, and therefore the enclosure, to be smaller and to fit easily in the hand.</p>
+        <img src="gasprob1maintop.jpg" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Portable Multi-Gas Detector, Main PCB, Side 1</figure>
+        <img src="gasprob1mainbottom.jpg" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Portable Multi-Gas Detector, Main PCB, Side 2</figure>
+        <p>A section of the the main PCB showing two QFN microcontrollers and part of the power supply and battery charging circuitry that required stringent segregation requriements. The required creepage was determined by the Electronic Design Engineer and the Certification Body, but entered by myself into the Pulsonix schematic diagram and synchronised over to the Pulsonix PCB design.</p>
+        <img src="dualmicros.webp" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Six Layer Main PCB with two Microcontrollers</figure>
+        <p>There were a total of 102 creepage rules setup between 17 different netclasses, covering a potted area with lower creepage requirements and the exposed area of the board.</p>
+        <p>Both the display and main PCBs were designed to meet the requirements of IPC Performance Class 3. Both boards have 100% test coverage with test pads for “closed” surface-mount pin only nets.</p>
+        <img src="gaspromicroareapulsonix.webp" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Breakout of the Main Microcontroller</figure>
+        <p>The break-out from one of the QFN microcontrollers is shown above from the Pulsonix CAD design. Both boards were six layer designs.</p>
+        <h1 class="text-4xl font-bold text-700 mb-4">R.F. Layout</h1>
+        <p>An example of an R.F. application I’ve laid out for a wireless gas detection instrument.</p>
+        <img src="rfcircuitexample.png" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">R.F. Layout</figure>
+        <h1 class="text-4xl font-bold text-700 mb-4">Gas Sensor Modules</h1>
+        <p>Some of the smallest PCBs I’ve designed, these Gas Sensor boards are just 35 mm by 22 mm (1.38 inches x 0.88 inches) in size.</p>
+        <p>The board below is a four layer board using metric 1608 (inch 0603) SMT passives.</p>
+        <div class="flex justify-center gap-4">
+  <img src="p5483b_toxic_imodule_1.webp" alt="Image 1" class="w-48 h-auto" />
+  <img src="p5483b_toxic_imodule_2.webp" alt="Image 2" class="w-48 h-auto" />
+</div>
+        
+        <p>The board below is a six layer board using metric 1005 (inch 0402) SMT passives.</p>
+        <div class="flex justify-center gap-4">
+  <img src="cosh_imodule_1.webp" alt="Image 1" class="w-48 h-auto" />
+  <img src="cosh_imodule_2.webp" alt="Image 2" class="w-48 h-auto" />
+</div>
+        
+        <h1 class="text-4xl font-bold text-700 mb-4">Industrial Control Panel</h1>
+        <p>The main PCB for an industrial Control Panel with four sensor inputs and a range of outputs including RS-485 and Relays capable of switching up to 240V and 5A.</p>
+        <img src="controlpanel1.webp" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Control Panel, Top Through-Hole Component Mounting Side</figure>
+        <p>This was an update of an existing design but with major modifications. The final copper thickness was increased from 35 micron (1 oz) to 70 micron (2 oz) to enable the relays to handle up to 5A whilst retaining the appropriate creepage between potentially live AC voltage tracks and other signal nets.</p>
+        <img src="controlpanel2.webp" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Control Panel, Bottom Surface-Mount Component Side</figure>
+        <p>The power input circuitry was re-laid out with a new design to meet the EMC requirements of the Marine Equipment Directive (MED).</p>
+        <p>The board is a double-sided PTH design.</p>
+        <h1 class="text-4xl font-bold text-700 mb-4">Analogue Television Signal PCB</h1>
+        <p>The signal PCB for a 28 inch and 32 inch series of Analogue Cathode-Ray-Tube Television models designed by myself using Mentor Graphics SFX RE between 2000 and 2004. The board was completely laid out manually without the use of autorouting tools.</p>
+        <p>The board has 100% test coverage on all nets for MDA testing (Manufacturing Defects Analysis) in a high-volume mass-production environment.</p>
+        <p>The top component side has surface-mount component assembly by reflow, and through-hole component assembly by auto-insertion.</p>
+        <img src="tvsignalpcb_topcomponentsid.jpg" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Television Signal PCB, Top Component Side</figure>
+        <p>There are three metal shield enclosures on the PCB that use “C-cuts” to enable the enclosure to be fitted and soldered by hand after the wave solder-bath process. This enables the board to be MDA tested (Manufacturing Defects Analysis) prior to final assembly.</p>
+        <p>Eyelets are fitted to the large components used for the mains power supply in the bottom right corner prior to the surface-mount assembly. Because of this a keep-out area for surface-mount components exists in the lower section of the board. A large window in the solder stencil aperture enabled the eyelets to be fitted to the board, with the solder paste squidgee being programed to stop before reaching the eyeleted area.</p>
+        <p>The bottom component side has surface-mount assembly by glue dots for chip passive components and SOT-23 packaged transistors, and is soldered by wave-solder in a solder bath.</p>
+        <img src="tvsignalpcb_solderside.jpg" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">elevision Signal PCB, Bottom Component Side</figure>
+        <p>The signal PCB is a paper phenol, FR2, double-sided board that uses silver-plated vias. The board was designed to be fitted on an Assembly Panel of two individual PCBs to reduce assembly costs. The holes and slots are die-punched.</p>
+        <h1 class="text-4xl font-bold text-700 mb-4">Analogue Television Power & Deflection PCB</h1>
+        <p>The Power and Deflection PCB for an Analogue Cathode-Ray-Tube Television designed by myself using Mentor Graphics SFX between 2000 and 2004. The board was completely laid out manually without the use of an autorouter.</p>
+
+        <p>The AC mains circuitry is laid out on the top right of the board with regulated switch-mode power supplies in the bottom right, providing 9V and two 5V supplies.</p>
+
+        <p>The left half of the board is laid out with the horizontal and vertical deflection circuitry for controlling the electron beam of the Cathode-Ray-Tube (CRT).</p>
+
+        <p>The Line-Output-Transformer (LOPT) is sited in the top left of the board and provides the high voltage required for the CRT Anode, in the region of 30kV to 35kV for these 28 inch or 32 inch widescreen models.</p>
+        <img src="tvsignalpcb_topcomponentsid.jpg" alt="Centered Image" class="mx-auto">
+        <figure class="md:max-w-md mx-auto text-center">Television Power and Deflection PCB, Top Component Side</figure>
+        <p>There are strict creepage and clearance requirements for the different nets on this board due to the high voltages present. In addition, layout of the deflection circuitry is critical for the circuit to function. Slots help provide a lower clearance over a greater creepage requirement.</p>
+        
+        
+    </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('sidebar');
+      const toggleBtn = document.getElementById('sidebarToggle');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('-translate-x-full');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+    const mainContent = document.querySelector('.mainarea');
+    const hamburgerBtn = document.getElementById('sidebarToggle');
+
+    // Function to check if the hamburger icon is visible
+    function adjustMainMargin() {
+      const isHamburgerVisible = window.getComputedStyle(hamburgerBtn).display !== 'none';
+      if (isHamburgerVisible) {
+        mainContent.classList.add('mt-[50px]');
+      } else {
+        mainContent.classList.remove('mt-[20px]');
+      }
+    }
+
+    // Run on page load
+    adjustMainMargin();
+
+    // Also run on window resize
+    window.addEventListener('resize', adjustMainMargin);
+  });
+  </script>
+</body>
+</html>
