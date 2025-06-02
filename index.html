@@ -2,11 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pcb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="home.css">
 </head>
-<body style="text-align:center; font-family:Arial; margin-top:50px;">
-  <h1>Hello, GitHub Pages is Working!</h1>
-  <p>This is my first deployed site.</p>
+<body class="bg-gray-100">
+
+  <!-- Toggle Button (hidden on md and up) -->
+  <button id="sidebarToggle" class="fixed top-2 left-1 z-50 bg-blue-600 text-white p-2 rounded md:hidden">
+    <!-- Hamburger Icon -->
+    <svg id="menu-icon" class="w-6 h-6 block" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <!-- Close Icon -->
+    <svg id="close-icon" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <!-- Sidebar -->
+   <div class="md:flex">
+    
+    <!-- Sidebar -->
+    <aside id="sidebar"
+      class="md:sticky md:top-0 fixed md:static p-10 top-0 left-0 w-64 h-screen bg-green-600 shadow transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+      
+
+  
+
+    <!-- Green Left Sidebar -->
+    
+    <div class="flex flex-col justify-between h-full text-white">
+
+    <!-- Top: Logo and Navigation Links -->
+    <div>
+      <div class="text-2xl font-bold mb-4" id="logo">Durbar Nandi</div>
+
+      <ul class="space-y-2">
+        <li><a href="index.html" class="block hover:bg-green-700 px-3 py-2 rounded">Home</a></li>
+        <li><a href="portfolio.html" class="block hover:bg-green-700 px-3 py-2 rounded">Portfolio</a></li>
+        <li><a href="contact.html" class="block hover:bg-green-700 px-3 py-2 rounded">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Bottom: Social Media Icons -->
+    <div class="flex justify-center space-x-4 text-xl mt-10">
+      <a href="https://www.facebook.com/pronay.nandi.9" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/tomcat1919/" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/durbar-nandi" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:pronaynandi73895@gmail.com" class="hover:text-white"><i class="fas fa-envelope"></i></a>
+    </div>
+    </div>
+    </aside>
+
+
+    <!-- Main Content Area -->
+    <section class="mainarea">
+            <div class="heading">
+                <h1 class="text-4xl font-bold text-700 mb-4">Welcome to My Website</h1>
+                <p>Printed Circuit Board and Computer Aided Design Bureau based in Swindon, Wiltshire.</p>
+            </div>
+            <div class="heading1">
+                <h1 class="text-4xl font-bold text-700 mb-4">Services offered</h1>
+                <ul class="list-disc pl-6 text-base md:text-lg lg:text-xl text-800">
+                 <li>
+                    <p>Design of Printed Circuit Boards including double-sided PTH, multilayer, flexible, and flexi-rigid boards. Portfolio of Past Designs. Technologies.</p>
+                    <img src="sectionpcb1.jpg" alt="Centered Image" class="mx-auto">
+                    <figure class="md:max-w-md mx-auto text-center">Section of a PCB layout</figure>
+                 </li>
+                  <li>
+                    <p>Library creation and maintenance to IPC-7351B, the upcoming IPC-7351C, or client’s design standards including Schematic Symbol, Component Footprint, 3D STEP model and Part. More information.</p>
+                    
+                 </li>
+                 <li>
+                    <p>Creation of 3D Solidworks and STEP files for Electro-Mechanical Components.</p>
+                    <img src="nxp-sot1673-1-case-1320a-02-mpak.webp" alt="Centered Image" class="mx-auto">
+                    <figure class="md:max-w-md mx-auto text-center">3D Model created for NXP SOT1673-1 Case 1320a-02 MPAK</figure>
+                 </li>
+                 
+                  <li>
+                    <p>Creation and editing of schematic/circuit diagram data.</p>
+                    <img src="exampleschematic.png" alt="Centered Image" class="mx-auto">
+                    <figure class="md:max-w-md mx-auto text-center">Example of a Schematic (Circuit) Diagram</figure>
+                 </li>
+                 <li>
+                    <p>Library creation and maintenance to IPC-7351B, the upcoming IPC-7351C, or client’s design standards including Schematic Symbol, Component Footprint, 3D STEP model and Part. More information.</p>
+                 </li>
+                 <li>
+                    <p>Reverse Engineering of PCB Designs including importing of Gerber and Excellon data and creation of intelligent PCB CAD design and Schematic Diagram. More information.</p>
+                 </li>
+                 <li>
+                    <p>Importing CAD design data and conversion into alternative formats. More information.</p>
+                    
+                 </li>
+                 <li>
+                    <p>Creation and updating of PCB Design and drawing standards..</p>
+                    
+                 </li>
+                 <li>
+                    <p>Consultation on PCB Design, Manufacturing, Assembly, Test, and Reliability issues.</p>
+                    
+                 </li>
+
+                  <li>
+                    <p>Conversion of legacy Cadstar data (including Cadstar for DOS) into modern Cadstar revisions. More information.</p>
+                    
+                 </li>
+                  <li>
+                    <p>Surveying and Cartography for Orienteering Competitions, Parks, and other purposes. More information.</p>
+                    
+                 </li>
+                </ul>
+            </div>
+            <div class="heading11">
+                <h1 class="text-4xl font-bold text-700 mb-4">PCB Fabrication and Assembly</h1>
+                <p>We can liase with PCB Fabricators and PCB Assemblers if required to source populated prototype PCBs.</p>
+                    
+                </div>
+                <div class="heading111">
+                <h1 class="text-4xl font-bold text-700 mb-4">PCB Fabrication and Assembly</h1>
+                <ul class="list-disc pl-6 text-base md:text-lg lg:text-xl text-800">
+  <li>
+    <p>PCB Designer with over twenty years experience in PCB Design and Fabrication.</p>
+                    </li>
+  <li>
+    <p>IPC Advanced Certified Interconnect Designer CID+.</p>
+                    </li>
+                    <li>
+    <p>Twelve Years Experience using Pulsonix PCB CAD Design Software.</p>
+                    </li>
+                    <li>
+    <p>Experience in using Cadstar, Mentor Graphics PADS, SFX-RE, Altium Designer, Orcad, RS DesignSpark, EasyPC, Cadsoft Eagle, KiCAD for PCB layout and PCB Libraries for footprint creation.</p>
+                    </li>
+                    <li>
+    <p>Experience in using Autocad for 2D drafting.</p>
+                    </li>
+                    <p>Experience in using Solidworks for 3D modeling of Electromechanical components and assemblies.</p>
+                    
+</ul>
+<p>Although based in Swindon and covering Wiltshire, Oxfordshire, Buckinghamshire, Berkshire, Somerset, Avon and Bristol, client location need not be an issue if working online. Previous clients have been based in Essex, UK and overseas in Canada, Germany and the United States.</p>
+</div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('sidebar');
+      const toggleBtn = document.getElementById('sidebarToggle');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('-translate-x-full');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+    const mainContent = document.querySelector('.mainarea');
+    const hamburgerBtn = document.getElementById('sidebarToggle');
+
+    // Function to check if the hamburger icon is visible
+    function adjustMainMargin() {
+      const isHamburgerVisible = window.getComputedStyle(hamburgerBtn).display !== 'none';
+      if (isHamburgerVisible) {
+        mainContent.classList.add('mt-[50px]');
+      } else {
+        mainContent.classList.remove('mt-[20px]');
+      }
+    }
+
+    // Run on page load
+    adjustMainMargin();
+
+    // Also run on window resize
+    window.addEventListener('resize', adjustMainMargin);
+  });
+  </script>
 </body>
 </html>
